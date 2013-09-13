@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta content='True' name='HandheldFriendly' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+<title>BeerPhone</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="js/jquery.min.js"></script>
+<script type='text/javascript' src="js/validation.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body id="index" class="home">
+<div class="mobile_main">
+<div class="rotary_div"><img src="images/rotary.png" width="171" height="171" alt="rotary"></div>
+
+<div class="beer_form_main"> 
+
+<div class="form_wrap">
+
+<div class="done"><strong>Thank you!</strong> We have received your message.</div>
+<div class="form">
+<form method="post" action='email.php'>
+
+<div id="step1">
+<div class="form_1">
+<div class="field_name"><img src="images/name.png" width="74" height="18" alt=""></div>
+<div class="fiel_area"> <input type='text' name='name' id='name' class="field_frmt"></div>
+</div>
+</div>
+
+<div id="step2">
+<div class="form_1">
+<div class="field_name"><img src="images/address.png" width="74" height="16" alt=""></div>
+<div class="fiel_area">
+  <input type='text' name='address' id='address' class="field_frmt">
+</div>
+
+</div>
+</div>
+
+<div id="step3">
+<div class="form_1">
+<div class="field_name"><img src="images/city.png" width="44" height="17" alt=""></div>
+<div class="fiel_area"> <input type='text' name='city' id='city' class="field_frmt"></div>
+</div>
+</div>
+
+<div id="step4">
+<div class="form_1">
+<div class="field_name"><img src="images/phone.png" width="58" height="17" alt=""></div>
+<div class="fiel_area"> <input type='text' name='phone' id='phone' class="field_frmt"></div>
+</div>
+</div>
+
+<div id="step5">
+<div class="form_1">
+<div class="field_name"><img src="images/email.png" width="58" height="17" alt=""></div>
+<div class="fiel_area"> <input type='text' name='email' id='email' class="field_frmt"></div>
+</div>
+</div>
+<div id="step6">
+<div class="form_1">
+<div class="check_box">
+<div class="roundedTwo">
+	<input type="checkbox" value="Y" tabindex="6" id="roundedTwo" name="check" />
+	<label for="roundedTwo"></label>
+</div>
+
+</div>
+<div class="check_name"><img src="images/iam19.png" width="135" height="34" alt=""></div>
+<div id='chk_error' class='error1'>Confirm If you are 19 Year Old</div>
+</div>
+
+</div>
+
+<div class="submit_btn">
+<input name="submit" id="submit" type="image" src="images/submit_btn.png">
+</div>
+<div class="loading"></div>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+
+</html>
