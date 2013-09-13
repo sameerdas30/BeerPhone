@@ -16,10 +16,11 @@ $(document).ready(function() {
             name.addClass('error');
             returnError = true;
         } else name.removeClass('error');
-        if (email.val()=='') {
+        if (!email.val().match(/^([a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,4}$)/i)) {
             email.addClass('error');
             returnError = true;
-        } else email.removeClass('error');
+        }
+		 else email.removeClass('error');
         if (address.val()=='') {
             address.addClass('error');
             returnError = true;
@@ -28,7 +29,7 @@ $(document).ready(function() {
             city.addClass('error');
             returnError = true;
         } else city.removeClass('error');
-		if (phone.val()=='') {
+		if (!phone.val().match(/^([0-9])/i)) {
             phone.addClass('error');
             returnError = true;
         } else phone.removeClass('error');
