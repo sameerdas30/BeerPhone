@@ -35,7 +35,7 @@ $(document).ready(function() {
         } else phone.removeClass('error');
 		if (jQuery("#roundedTwo").is(":checked")) {
 				$('#chk_error').fadeOut(500);
-				returnError = false;
+				/*returnError = false;*/
 			}
 			else {
 				returnError = true;
